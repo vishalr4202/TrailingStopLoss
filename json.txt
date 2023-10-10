@@ -1,0 +1,41 @@
+{
+    "entry_type":"PE",
+    "tradingsymbol": "NIFTY",
+    "date":"23713",
+    "optionPrice":275,
+    "exchange": "NFO",
+    "transaction_type": "BUY",
+    "quantity": "50",
+    "price": 19398,
+    "email":"sushil@gmail.com",
+    "profitPrice":"10",
+    "lossPrice":"10"
+}
+
+{
+   "entry_type":"PE",
+    "tradingsymbol": "NIFTY",
+    "date":"23713",
+    "exchange": "NFO",
+    "transaction_type": "BUY",
+    "quantity": "50",
+    "price": 19355,
+    "email":"mvsranka@gmail.com",
+    "profitPrice":"10",
+    "lossPrice":"7"
+}
+
+http://localhost:8000/getAllUsers
+
+{
+//    "entry_type":"PE",
+    "tradingsymbol": "ICICIBANK",
+    "date":"23713",
+    "exchange": "NSE",
+    "transaction_type": "BUY",
+    "quantity": "50",
+    "price": 950,
+    "email": ["mvsranka@gmail.com","nitin.prabhakar8@gmail.com"],
+    "profitPrice":"10",
+    "lossPrice":"7"
+}
