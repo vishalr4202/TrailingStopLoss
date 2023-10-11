@@ -34,7 +34,7 @@ http://localhost:8000/getAllUsers
     "exchange": "NSE",
     "transaction_type": "BUY",
     "quantity": "50",
-    "order":  "{{strategy.order.action}}"
+    "order":  "{{strategy.order.action}}",
     "price": {{close}},
     "email": ["mvsranka@gmail.com","nitin.prabhakar8@gmail.com"],
     "profitPrice":"10",
