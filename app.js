@@ -4,7 +4,7 @@ const app = express();
 const AuthRoutes = require("./routes/auth");
 const MongoConnect = require("./utils/db").MongoConnect;
 
-const port = 8000;
+const port = 80;
 
 app.use(express.json());
 

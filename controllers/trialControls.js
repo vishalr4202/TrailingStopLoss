@@ -14,6 +14,7 @@ exports.ticksData = (req, res, next) => {
         lossPrice,
         profitPrice,
         date,
+        order
     } = req.body;
 
     var ticker;
@@ -49,7 +50,7 @@ exports.ticksData = (req, res, next) => {
         return ordered;
     }
 
-
+    if(order != 'sell'){
     const x = new Promise((resolve, reject) => {
         const data = email.map(async (ele, index) => {
             await User.findByEmailId(ele).then((result) => {
@@ -80,6 +81,8 @@ exports.ticksData = (req, res, next) => {
                 console.log(symbol, "symbol")
                 let x = regularOrderPlace("regular", symbol).then((res) => {
                     return res;
+                }).catch(err => {
+                    console.log(err)
                 });
                 return x;
             })
@@ -243,4 +246,10 @@ exports.ticksData = (req, res, next) => {
             ticker.setMode(ticker.modeFull, items);
         }
     })
+}
+else{
+    res.status(200).json({
+        message: "trades cannot be executed as order is sell",
+      });   
+}
 }

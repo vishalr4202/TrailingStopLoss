@@ -28,13 +28,14 @@
 http://localhost:8000/getAllUsers
 
 {
-//    "entry_type":"PE",
+    "entry_type":"PE",
     "tradingsymbol": "ICICIBANK",
     "date":"23713",
     "exchange": "NSE",
     "transaction_type": "BUY",
     "quantity": "50",
-    "price": 950,
+    "order":  "{{strategy.order.action}}"
+    "price": {{close}},
     "email": ["mvsranka@gmail.com","nitin.prabhakar8@gmail.com"],
     "profitPrice":"10",
     "lossPrice":"7"
