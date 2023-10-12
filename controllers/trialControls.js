@@ -51,7 +51,7 @@ exports.ticksData = (req, res, next) => {
         return ordered;
     }
 
-    if(order != 'sell'){
+    if((order == 'buy' && entry_type == 'CE') || (order == 'sell' && entry_type=='PE')){
         logger.info('in request')
     const x = new Promise((resolve, reject) => {
         const data = email.map(async (ele, index) => {
